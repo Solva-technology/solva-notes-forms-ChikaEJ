@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{% url 'notes:all_notes' %}">Notebook</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'notes:all_notes' %}">Все заметки</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'users:all_users' %}">Пользователи</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'notes:new_note' %}">Добавить заметку</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
